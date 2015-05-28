@@ -1,0 +1,12 @@
+784,785c784,785
+<               gst_util_uint64_scale (timeposition, avstream->r_frame_rate.num,
+<                   GST_SECOND * avstream->r_frame_rate.den));
+---
+>               gst_util_uint64_scale (timeposition, avstream->avg_frame_ratee.num,
+>                   GST_SECOND * avstream->avg_frame_rate.den));
+821,822c821,822
+<               gst_util_uint64_scale (timeduration, avstream->r_frame_rate.num,
+<                   GST_SECOND * avstream->r_frame_rate.den));
+---
+>               gst_util_uint64_scale (timeduration, avstream->avg_frame_rate.num,
+>                   GST_SECOND * avstream->avg_frame_rate.den));
